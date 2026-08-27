@@ -1,0 +1,24 @@
+/* [00:51] Ajustando a largura total da página */
+body {
+    max-width: 100vw;
+}
+
+/* [02:27] e [02:23] Organizando os posts e criando quebras de linha no pai (main) */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* [03:01] e [03:29] Estilizando, redimensionando e centralizando o conteúdo dos cards (article) */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #183C63;
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+    flex: 1 1 25%;
+}
