@@ -9,7 +9,8 @@ main {
 
 article {
     display: flex;
-    flex-direction: column;
+    /* Altera o eixo principal para linha (imagem, textos e botões um ao lado do outro) */
+    flex-direction: row; 
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -17,5 +18,11 @@ article {
     margin: 16px;
     gap: 16px;
     padding: 16px;
-    flex: 1 1 25%;
+    /* Faz cada card ocupar 100% da largura total da página */
+    flex: 1 1 100%; 
+}
+
+/* Exemplo usando align-self no botão para mudar seu alinhamento individual */
+article button {
+    align-self: flex-end; /* Reposiciona o botão no final do container, quebrando o alinhamento central */
 }
